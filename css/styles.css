@@ -248,10 +248,24 @@ body {
 	align-items: center;
 	width: 44px;
 	height: 44px;
-	background-color: #188ce8;
 	border-radius: 50%;
 	justify-content: center;
 }
+
+.team-soc-icon {
+	fill: #afb1b8;
+}
+
+.team-soc-link:hover, 
+.team-soc-link:focus {
+	background-color: #2196F3;
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+	fill: #ffffff; 
+}
+
 
 .team-item-content {
 	padding-top: 30px;
@@ -304,11 +318,11 @@ body {
 	background: var(--background-common-color);
 	padding: 60px 0;
 	align-items: baseline;
-	display: flex;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 .container-footer {
-	width: 231px;
-	height: 81px;
+gap: 70px
 }
 .footer-list {
 	color: inherit;
