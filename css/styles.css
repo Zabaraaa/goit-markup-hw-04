@@ -153,7 +153,30 @@ body {
 .about {
 	padding: 94px 0;
 }
-.about-item-bg {
+.about-item-first::before{
+	content:"";
+	display: block;
+	display: flex;
+	height: 120px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #F5F4FA;
+	border-radius: 4px;
+}
+.about-item-first:nth-child(1)::before{
+	background-image: url(../images/antenna.svg);
+}
+.about-item-first:nth-child(2)::before {
+	background-image: url(../images/clock.svg);
+}
+.about-item-first:nth-child(3)::before {
+	background-image: url(../images/diagram.svg);
+}
+.about-item-first:nth-child(4)::before {
+	background-image: url(../images/astronaut.svg);
+}
+
+/* .about-item-bg {
 	background: #f5f4fa;
 	border-radius: 4px;
 	width: 270px;
@@ -164,7 +187,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 25px 102.34px;
-}
+} */
 .occupation {
 	padding-bottom: 94px;
 }
@@ -282,6 +305,10 @@ body {
 	padding: 60px 0;
 	align-items: baseline;
 	display: flex;
+}
+.container-footer {
+	width: 231px;
+	height: 81px;
 }
 .footer-list {
 	color: inherit;
