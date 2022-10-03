@@ -33,10 +33,10 @@ address {
 }
 
 .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
 }
 /* --------------------body-------------------- */
 body {
@@ -47,15 +47,15 @@ body {
 
 /*------------------- Header -------------------*/
 .header {
-	border-bottom: 1px solid #ECECEC;
+	border-bottom: 1px solid #ececec;
 }
 .header-container {
 	gap: 93px;
 }
 .header-navigation {
 	display: flex;
-		align-items: center;
-		justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
 }
 .header-list {
 	gap: 50px;
@@ -107,7 +107,11 @@ body {
 /* ----------------------HERO------------------------*/
 .hero {
 	background-color: var(--background-common-color);
-padding: 200px 0;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 200px 0;
 }
 
 .hero-title {
@@ -118,11 +122,10 @@ padding: 200px 0;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--common-color);
-    margin-bottom: 40px;
-    max-width: 696px;
+	margin-bottom: 40px;
+	max-width: 696px;
 	margin-left: auto;
-		margin-right: auto
-
+	margin-right: auto;
 }
 .hero-btn {
 	font-family: inherit;
@@ -134,12 +137,12 @@ padding: 200px 0;
 	color: var(--common-color);
 	background-color: var(--active-link-color);
 	display: block;
-	margin: 0 auto; 
+	margin: 0 auto;
 	padding: 10px 32px;
-	background: #2196F3;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		border-radius: 4px;
-		min-width: 216px;
+	background: #2196f3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	min-width: 216px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -148,7 +151,19 @@ padding: 200px 0;
 
 /* --------------About---------------- */
 .about {
-padding: 94px 0;
+	padding: 94px 0;
+}
+.about-item-bg {
+	background: #f5f4fa;
+	border-radius: 4px;
+	width: 270px;
+	height: 120px;
+}
+.about-item-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 25px 102.34px;
 }
 .occupation {
 	padding-bottom: 94px;
@@ -168,7 +183,8 @@ padding: 94px 0;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #212121;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
+	margin-top: 30px;
 }
 .about-text {
 	font-weight: 400;
@@ -195,9 +211,23 @@ padding: 94px 0;
 }
 .team-item {
 	width: calc(100% / 4 - 30px);
-	background: #FFFFFF;
+	background: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
+}
+.team-soc-list {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+.team-soc-link {
+	display: flex;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	background-color: #188ce8;
+	border-radius: 50%;
+	justify-content: center;
 }
 
 .team-item-content {
@@ -220,14 +250,39 @@ padding: 94px 0;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--contact-color);
+	margin-bottom: 16px;
+}
+
+/* ----------------CLIENTS--------------- */
+.clients {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.clients-list {
+	margin-top: 50px;
+}
+.clients-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-clients-icon {
+	width: 170px;
+	height: 92px;
+	justify-content: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #AFB1B8
 }
 
 /* -------------Footer-------------- */
 .footer {
 	background: var(--background-common-color);
 	padding: 60px 0;
+	align-items: baseline;
+	display: flex;
 }
-
 .footer-list {
 	color: inherit;
 	display: block;
@@ -261,6 +316,7 @@ padding: 94px 0;
 	margin-bottom: 9px;
 }
 
+
 /* -------------Portfolio------------- */
 .current {
 	color: var(--active-link-color);
@@ -280,7 +336,7 @@ padding: 94px 0;
 .hero-portfolio {
 	padding: 94px 0;
 }
-.portfolio-list { 
+.portfolio-list {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
@@ -316,7 +372,7 @@ padding: 94px 0;
 	color: var(--title-common-color);
 	cursor: pointer;
 	border: none;
-	background: #F5F4FA;
+	background: #f5f4fa;
 	border-radius: 4px;
 	padding: 6px 22px;
 }
@@ -331,9 +387,9 @@ img {
 	height: auto;
 }
 .portfolio-information-item {
-	border-bottom: 1px solid #EEEEEE;
-	border-right: 1px solid #EEEEEE;
-	border-left: 1px solid #EEEEEE;
+	border-bottom: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
 	width: calc((100% - 60px) / 3);
 }
 .portfolio-information-title {
