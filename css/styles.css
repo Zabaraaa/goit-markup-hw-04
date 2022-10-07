@@ -95,14 +95,15 @@ body {
 	padding: 32px 0;
 	display: block;
 }
-.header-mail:hover, .contacts-item, 
-.header-mail:focus, .contacts-item{
+.header-link:hover, .contacts-item, 
+.header-link:focus, .contacts-item{
 	/* color:#188ce8; */
 	fill: currentColor;
 }
 
-.header-list-contacts a {
-	color: var(--contact-color);
+.header-list-contacts a:hover,
+.header-list-contacts a:focus {
+	color: var(--active-link-color);
 }
 
 /* ----------------------HERO------------------------*/
@@ -297,12 +298,16 @@ body {
 .clients-icon {
 	fill: #afb1b8;
 	width: 100%;
-	
+	/* height: 100%; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+.header-link {
+	width: 100%;
+	height: 100%;
+}
 .clients-icon:hover,
 .clients-icon:focus {
 	fill: #2196F3;
